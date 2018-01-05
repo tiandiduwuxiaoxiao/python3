@@ -5,6 +5,7 @@ import requests
 import webbrowser
 from urllib import request
 from bs4 import BeautifulSoup
+from urllib.error import URLError, HTTPError, ContentTooShortError
 
 url = 'https://www.zhihu.com/'
 def getSoup(url):
